@@ -1,0 +1,68 @@
+// MAIN CON IMAGEN Y TEXTO
+<div className='w-full h-screen text-center grid grid-cols-2 gap-4 py-8 px-9'>
+<div className='w-[50%] h-[50%] text-center'>
+    <div className='max-w-[1240px] w-full h-full p-2 flex justify-center items-center'>
+        <div>
+            <p className='uppercas tracking-widest text-gray-600'>INGENIERO AGRONOMO</p>
+            <h1>Hola, Soy <span className='text-[#5651e5]'>Rigoberto Estrada Zuniga</span></h1>
+            <h1 className='py-4 text-gray-700'>Ingeniero Agronomo</h1>
+            <p className='py-4 text-gray-600 max-w-[70%] m-auto'>Investigador Agrario especialista en cereales y granos Andinos, formulación de proyectos de desarrollo rural y mejoramiento genético, aptitudes para trabajo en equipos multidisciplinarios, gestión de proyectos con entidades público y privadas, entre otras actividades vinculadas al sector agropecuario</p>
+        </div>
+    </div>
+</div>
+<div className='w-[50%] h-[50%] text-center'>
+    <div className='max-w-[1240px] w-full h-full p-2 flex justify-center items-center'>
+        <div>
+            <div className="flex-1 flex items-center justify-center">
+                |
+            </div>
+        </div>
+    </div>
+</div>
+</div> 
+
+//TEST
+
+<div class="flex flex-wrap">
+  <div class="w-full md:w-1/2">Contenido 1</div>
+  <div class="w-full md:w-1/2">Contenido 2</div>
+</div>
+
+
+//DARKO MODE
+
+import React, { useState } from "react";
+
+function App() {
+  const [darkMode, setDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
+
+  return (
+    <div className={darkMode ? "dark" : "light"}>
+      <button onClick={toggleDarkMode}>Alternar modo oscuro</button>
+      <p>Contenido de la aplicación</p>
+    </div>
+  );
+}
+
+export default App;
+
+
+asegúrate de que la clase “dark” o “light” esté definida en tu archivo CSS y que se aplique correctamente al contenedor principal.
+
+En CSS, puedes definir los estilos para el modo oscuro y el modo claro utilizando la media query prefers-color-scheme. Esta media query se utiliza para detectar si el usuario ha habilitado el modo oscuro en su dispositivo y, a continuación, aplicar los estilos correspondientes.
+
+Por ejemplo, si quieres que el fondo sea negro y el texto sea blanco en el modo oscuro, puedes definir los siguientes estilos:
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+    color: white;
+  }
+}
+
+
+
