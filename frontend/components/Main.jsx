@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
 import { FaFacebook, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
@@ -6,8 +7,8 @@ import { BsFillPersonLinesFill } from 'react-icons/bs'
 
 const Main = () => {
     return (
-        <div id='hoome' className='w-full h-screen text-center'>
-            <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
+        <div id='home' className='w-full h-screen text-center'>
+            <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center '>
                 <div>
                     {/* <Image
                         src="/../public/assets/rigo.jpg"
@@ -16,22 +17,30 @@ const Main = () => {
                         width='2000'
                         height='2000'
                     /> */}
-                    <h1>Hola, Soy <span className='text-[#5651e5]'>Rigoberto Estrada Zuniga</span></h1>
-                    <h1 className='py-4 text-gray-700'>Ingeniero Agronomo</h1>
-                    <p className='py-4 text-gray-600 max-w-[70%] m-auto'>Me desempeño como investigador agrario en el Instituto Nacional de Innovación Agraria desde 1997 habiendo generado tecnologías y variedades mejoradas en granos andinos y cereales, actualmente está a mi responsabilidad el Programa Nacional de Cereales, Granos Andinos y Leguminosas del INIA.</p>
+                    <h1><span className='text-[#417e2b]'>Rigoberto Estrada Zuniga</span></h1>
+                    <h1 className='py-4 text-gray-900'>Ingeniero Agronomo</h1>
+                    <p className='py-4 text-gray-800 max-w-[70%] m-auto'>Me desempeño como investigador agrario en el Instituto Nacional de Innovación Agraria desde 1997 habiendo generado tecnologías y variedades mejoradas en granos andinos y cereales, actualmente está a mi responsabilidad el Programa Nacional de Cereales, Granos Andinos y Leguminosas del INIA.</p>
                     <p className='uppercas tracking-widest text-gray-600 my-3'>CUSCO - PERÚ 2023</p>
                     <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
                         <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                            <BsFillPersonLinesFill />
+                            <Link href='https://ctivitae.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do?id_investigador=135' target="_blank">
+                                <BsFillPersonLinesFill />
+                            </Link>
                         </div>
                         <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                            <FaFacebook />
+                            <Link href='https://www.facebook.com/rigoberto.estradazuniga' target="_blank">
+                                <FaFacebook />
+                            </Link>
                         </div>
                         <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                            <FaInstagram />
+                            <Link href='https://www.instagram.com/rigobertoestradazuniga/' target="_blank">
+                                <FaInstagram />
+                            </Link>
                         </div>
                         <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                            <FaTwitter />
+                            <Link href='https://www.linkedin.com/in/rigoberto-estrada-zuniga-7b0506b1/' target="_blank">
+                                <FaLinkedinIn />
+                            </Link>
                         </div>
                     </div>
                 </div>
