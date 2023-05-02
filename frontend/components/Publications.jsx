@@ -1,17 +1,17 @@
 import React from 'react'
 import COMPORTGENOTIPOS from '../public/assets/projects/COMPORTAMIENTO81GENOTIPOS.png'
 import INIA440 from '../public/assets/projects/INIA440.png'
-import ProjectItem from './ProjectItem'
+import PublicationItem from './PublicationItem'
 
 const Publications = () => {
     return (
         <div id='publications' className='w-full'>
             <div className='max-w-[1240px] mx-auto px-2 py-16'>
-                <p className='uppercase text-lg font-bold tracking-widest text-[#316523]'>Publicaciones</p>
+                <p className='uppercase text-lg font-bold tracking-widest text-[#316523]'>Publicaciones Científicas</p>
                 <h2 className='py-4'>Mis Publicaciones</h2>
                 <div className='grid md:grid-cols-2 gap-8'>
                     {/* ADD FUNCTION TO SEE MORE PROJECTS AND SEE LESS OR CAROUSEL*/}
-                    <ProjectItem
+                    <PublicationItem
                         typePublished='Artículo en revista científica'
                         descAuthor="Primer Autor"
                         backgroundImg={INIA440}
@@ -19,7 +19,7 @@ const Publications = () => {
                         year='2023'
                         projectUrl="http://www.doi.org/10.1016/J.HELIYON.2022.E12712" />
 
-                    <ProjectItem
+                    <PublicationItem
                         typePublished='Artículo en revista'
                         descAuthor="Autor"
                         backgroundImg={COMPORTGENOTIPOS}
@@ -27,7 +27,7 @@ const Publications = () => {
                         year='2022'
                         projectUrl="http://www.doi.org/10.19136/era.a9n1.3134" />
 
-                    <ProjectItem
+                    <PublicationItem
                         typePublished='Artículo en revista científica'
                         descAuthor="Primer Autor"
                         backgroundImg={INIA440}
@@ -35,7 +35,7 @@ const Publications = () => {
                         year='2023'
                         projectUrl="/project" />
 
-                    <ProjectItem
+                    <PublicationItem
                         typePublished='Artículo en revista'
                         descAuthor="Autor"
                         backgroundImg={COMPORTGENOTIPOS}

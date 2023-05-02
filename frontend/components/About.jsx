@@ -3,7 +3,7 @@ import React from 'react'
 
 const About = () => {
     return (
-        <div id='about' className='w-full md:h-screen p-2 flex items-center py-16'>
+        <div id='about' className='w-full md:h-full p-2 flex items-center py-16'>
             <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8'>
                 <div className='col-span-2 text-justify'>
                     <p className='uppercase text-lg font-bold tracking-widest text-[#316523]'>Acerca de Mi</p>
@@ -12,9 +12,7 @@ const About = () => {
                     <p className='py-4 text-gray-950'>Investigador Agrario especialista en cereales y granos Andinos,
                         formulación de proyectos de desarrollo rural y mejoramiento genético, aptitudes para trabajo en equipos
                         multidisciplinarios, gestión de proyectos con entidades público y privadas, entre otras actividades vinculadas
-                        al sector agropecuario.</p>
-
-                    <p className='py-4 text-gray-950'><strong>Cursos de especialización:</strong> Mejoramiento Genético para Resistencia Durable
+                        al sector agropecuario. <br /> <strong>Cursos de especialización:</strong> Mejoramiento Genético para Resistencia Durable
                         a patógenos especializados dictado por instructores de la Universidad de Wageningen Holanda, en la Universidad
                         de Cienfuegos de Cuba y La Universidad Agraria La Molina, Análisis Bioquímico de semillas en la Universidad
                         de Costa Rica, Costos y presupuestos en el Instituto Abaco del Cusco, Agrobiodiversidad y Cambio Climático

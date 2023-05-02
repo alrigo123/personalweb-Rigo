@@ -2,9 +2,10 @@ import Head from 'next/head'
 import About from 'rigo/components/About'
 import Contact from 'rigo/components/Contact'
 import Main from 'rigo/components/Main'
-import Projects from 'rigo/components/Publications'
-import Skills from 'rigo/components/Rewards'
+import Publications from 'rigo/components/Publications'
+import Rewards from 'rigo/components/Rewards'
 import Footer from 'rigo/components/Footer'
+import Projects from 'rigo/components/Projects'
 
 export default function Home() {
   return (
@@ -20,8 +21,9 @@ export default function Home() {
       </Head>
       <Main />
       <About />
-      <Skills />
-      <Projects />
+      <Rewards />
+      <Publications />
+      <Projects/>
       <Contact /> 
     </div>
   )
