@@ -12,7 +12,7 @@ const Publications = () => {
     return (
         <div id='publications' className='w-full'>
             <div className='max-w-[1240px] mx-auto px-2 py-16'>
-                <p className='uppercase text-lg font-bold tracking-widest text-[#316523]'>Publicaciones Científicas</p>
+                <p className='uppercase text-lg font-bold tracking-widest text-[#316523]'>Publicaciones</p>
                 <h2 className='py-4'>Mis Publicaciones</h2>
                 <div className='grid md:grid-cols-2 gap-8'>
                     {/* ADD FUNCTION TO SEE MORE PROJECTS AND SEE LESS OR CAROUSEL*/}

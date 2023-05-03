@@ -66,6 +66,9 @@ const Navbar = () => {
                         <Link href="/#publications">
                             <li className='ml-10 text-sm uppercase hover:border-b'>Publicaciones</li>
                         </Link>
+                        <Link href="/#projects">
+                            <li className='ml-10 text-sm uppercase hover:border-b'>Proyectos</li>
+                        </Link>
                         <Link href="/#contact">
                             <li className='ml-10 text-sm uppercase hover:border-b'>Contacto</li>
                         </Link>
@@ -111,6 +114,9 @@ const Navbar = () => {
                             </Link>
                             <Link href='/#publications'>
                                 <li onClick={() => setNav(false)} className='py-4 text-sm'>Publicaciones</li>
+                            </Link>
+                            <Link href='/#projects'>
+                                <li onClick={() => setNav(false)} className='py-4 text-sm'>Proyectos</li>
                             </Link>
                             <Link href='/#contact'>
                                 <li onClick={() => setNav(false)} className='py-4 text-sm'>Contacto</li>

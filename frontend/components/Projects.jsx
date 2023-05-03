@@ -2,8 +2,28 @@ import React from 'react'
 
 const Projects = () => {
   return (
-    <div>Proyectos de Investigacion
+    <div id='projects' >Proyectos de Investigacion
 
+<h2>sadasasd</h2>
+<h2>sadasasd</h2>
+<h2>sadasasd</h2>
+<h2>sadasasd</h2>
+<h2>sadasasd</h2>
+<h2>sadasasd</h2>
+<h2>sadasasd</h2>
+<h2>sadasasd</h2>
+<h2>sadasasd</h2>
+<h2>sadasasd</h2>
+<h2>sadasasd</h2>
+<h2>sadasasd</h2>
+<h2>sadasasd</h2>
+<h2>sadasasd</h2>
+<h2>sadasasd</h2>
+<h2>sadasasd</h2>
+<h2>sadasasd</h2>
+<h2>sadasasd</h2>
+<h2>sadasasd</h2>
+<h2>sadasasd</h2>
 <h2>sadasasd</h2>
 
     </div>

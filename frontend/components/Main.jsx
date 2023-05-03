@@ -17,10 +17,11 @@ const Main = () => {
                         width='2000'
                         height='2000'
                     /> */}
-                    <h1><span className='text-[#417e2b]'>Rigoberto Estrada Zuniga</span></h1>
-                    <h1 className='py-4 text-gray-900'>Ingeniero Agronomo</h1>
+                    <h1><span className='text-[#417e2b] py-4'>Rigoberto Estrada Zúniga</span></h1>
+                    <h1 className='py-4 text-gray-900'>Ingeniero Agrónomo</h1>
+                    <h1 className='py-4 text-gray-900'> Magister en Estadística</h1>
                     <p className='py-4 text-gray-800 max-w-[70%] m-auto'>Me desempeño como investigador agrario en el Instituto Nacional de Innovación Agraria desde 1997 habiendo generado tecnologías y variedades mejoradas en granos andinos y cereales, actualmente está a mi responsabilidad el Programa Nacional de Cereales, Granos Andinos y Leguminosas del INIA.</p>
-                    <p className='uppercas tracking-widest text-gray-600 my-3'>CUSCO - PERÚ 2023</p>
+                    <p className='uppercas tracking-widest text-gray-600 font-bold my-3'>CUSCO - PERÚ 2023</p>
                     <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
                         <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                             <Link href='https://ctivitae.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do?id_investigador=135' target="_blank">

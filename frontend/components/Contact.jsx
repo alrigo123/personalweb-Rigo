@@ -3,7 +3,6 @@ import React from 'react'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
 import { FaFacebook, FaInstagram, FaTwitter, FaLinkedinIn } from 'react-icons/fa'
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi'
-import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
 
 const Contact = () => {
   return (
@@ -20,11 +19,11 @@ const Contact = () => {
                 {/* <img className='rounded-xl hover:scale-105 ease-in duration-300' src="/../public/assets/contact1.png" alt="" /> */}
               </div>
               <div>
-                <h2 className='pt-3 font-bold text-2xl '>Ing. Mg. Rigoberto Estrada Zuniga</h2>
-                <p className='py-3 text-black'>Libre a atender consultas o correos.-.......</p>
-                <p className='py-3 text-black font-bold'>Correos <br /> <strong className='text-blue-500'> algo@example.com <br /> algo@example.com </strong></p>
-                <p className='py-3 text-black font-bold'>Celular <br /> <strong className='text-blue-500'>+51 111111111 </strong></p>
-                <p className='py-3 text-black font-bold'>Institucion <br /> <strong className='text-blue-500'> INIA <br /> Av. Micaela abstodas </strong></p>
+                <h2 className='pt-3 font-bold text-2xl '>Ing. M.Sc. Rigoberto Estrada Zuniga</h2>
+                <p className='pt-3 text-black'>Si deeseas contactarte conmigo escribeme a:</p>
+                <p className='py-3 text-black font-bold'>Correos <br /> <strong className='text-blue-500'> restrada@inia.gob.pe <br /> zestradar@gmail.com </strong></p>
+                <p className='py-3 text-black font-bold'>Celular <br /> <strong className='text-blue-500'>+51 984045865 </strong></p>
+                <p className='py-3 text-black font-bold'>Institucion <br /> <strong className='text-blue-500'> INIA <br /> Av. Micaela Abastidas 310-314 </strong></p>
               </div>
               <div>
                 <p className='uppercase pt-3 text-black font-bold'>Contactame tambien por</p>
