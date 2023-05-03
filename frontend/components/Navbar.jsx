@@ -50,7 +50,7 @@ const Navbar = () => {
             {/* Default navbar */}
             <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
                 <Link href='/'>
-                    <Image src="/../public/assets/logaso.png" alt='/' width='125' height='50' />
+                    <Image src="/../public/assets/a.png" alt='/' width='125' height='50' />
                 </Link>
                 <div>
                     <ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
@@ -88,14 +88,14 @@ const Navbar = () => {
                     <div>
                         <div className='flex w-full items-center justify-between'>
 
-                            <Image src='/../public/assets/logaso2.png' width='87' height='35' alt='/' />
+                            <Image src='/../public/assets/a.png' width='87' height='35' alt='/' />
                             <div onClick={handleNav} className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'>
                                 {/* ICON */}
                                 <AiOutlineClose />
                             </div>
                         </div>
                         <div className='border-b border-gray-300 my-4'>
-                            <p className='w-[85%] md:w-[90%] py-3'>Lets build something legendary together</p>
+                            <p className='w-[85%] md:w-[90%] py-3'>"QUOTES"</p>
                         </div>
                     </div>
                     <div className='py-4 flex flex-col'>
@@ -113,11 +113,11 @@ const Navbar = () => {
                                 <li onClick={() => setNav(false)} className='py-4 text-sm'>Publicaciones</li>
                             </Link>
                             <Link href='/#contact'>
-                                <li onClick={() => setNav(false)} className='py-4 text-sm'>Contact</li>
+                                <li onClick={() => setNav(false)} className='py-4 text-sm'>Contacto</li>
                             </Link>
                         </ul>
                         <div className='pt-40'>
-                            <p className='uppercase tracking-widest text-[#5651e5]'>Lets contact</p>
+                            <p className='uppercase tracking-widest text-[#5651e5]'>Contactame por</p>
                             <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
                                 <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                                     <BsFillPersonLinesFill />
