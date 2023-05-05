@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react'
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
 import { FaFacebook, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
+import { RiMoonFill, RiSunLine } from "react-icons/ri"
 import { useRouter } from 'next/router'
 
 const Navbar = () => {
@@ -53,7 +54,7 @@ const Navbar = () => {
                     <Image src="/../public/assets/a.png" alt='/' width='125' height='50' />
                 </Link>
                 <div>
-                    <ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
+                    <ul style={{ color: `${linkColor}` }} className='hidden md:flex items-center justify-center content-center'>
                         <Link href="/">
                             <li className='ml-10 text-sm uppercase hover:border-b'>Home</li>
                         </Link>
@@ -72,6 +73,11 @@ const Navbar = () => {
                         <Link href="/#contact">
                             <li className='ml-10 text-sm uppercase hover:border-b'>Contacto</li>
                         </Link>
+                        {/* <button onClick={() => setTheme("light")} */}
+                        <button
+                            className="ml-10 bg-slate-100 p-2 rounded-xl">
+                            <RiSunLine size={25} color="black" />
+                        </button>
                     </ul>
 
                     <div onClick={handleNav} className='md:hidden'>
@@ -84,7 +90,7 @@ const Navbar = () => {
 
             {/* Mobile menu */}
             {/* When menu pop up then the color will change acordding to width device */}
-            <div className={nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70' : ''}>
+            <div onClick={handleNav} className={nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70' : ''}>
                 <div className={nav ?
                     ' fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500' :
                     'fixed left-[-100%] top-0 p-10 ease-in duration-500'}>
@@ -121,6 +127,10 @@ const Navbar = () => {
                             <Link href='/#contact'>
                                 <li onClick={() => setNav(false)} className='py-4 text-sm'>Contacto</li>
                             </Link>
+                            <button
+                            className="py-4 w-[20%] bg-red-700 rounded-sm border-solid">
+                            <RiSunLine size={25} color="black" />
+                        </button>
                         </ul>
                         <div className='pt-40'>
                             <p className='uppercase tracking-widest text-[#5651e5]'>Contactame por</p>
