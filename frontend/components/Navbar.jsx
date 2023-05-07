@@ -6,6 +6,7 @@ import { FaFacebook, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa
 import { BsFillPersonLinesFill } from 'react-icons/bs'
 import { RiMoonFill, RiSunLine } from "react-icons/ri"
 import { useRouter } from 'next/router'
+import logo from '../public/assets/a.png'
 
 const Navbar = () => {
 
@@ -51,7 +52,7 @@ const Navbar = () => {
             {/* Default navbar */}
             <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
                 <Link href='/'>
-                    <Image src="/../public/assets/a.png" alt='/' width='125' height='50' />
+                    <Image src={logo} alt='/' width='125' height='50' />
                 </Link>
                 <div>
                     <ul style={{ color: `${linkColor}` }} className='hidden md:flex items-center justify-center content-center'>
@@ -97,7 +98,7 @@ const Navbar = () => {
                     <div>
                         <div className='flex w-full items-center justify-between'>
 
-                            <Image src='/../public/assets/a.png' width='87' height='35' alt='/' />
+                            <Image src={logo} width='87' height='35' alt='/' />
                             <div onClick={handleNav} className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'>
                                 {/* ICON */}
                                 <AiOutlineClose />
@@ -139,7 +140,7 @@ const Navbar = () => {
                                     <BsFillPersonLinesFill />
                                 </div>
                                 <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                    <Link href='https://www.facebook.com/alex.estradacuba.9'>
+                                    <Link href='https://www.facebook.com/rigoberto.estradazuniga'>
                                         <FaFacebook />
                                     </Link>
                                 </div>
