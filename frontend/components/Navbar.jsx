@@ -74,10 +74,10 @@ const Navbar = () => {
                             <li className='ml-10 text-sm uppercase hover:border-b'>Contacto</li>
                         </Link>
                         {/* <button onClick={() => setTheme("light")} */}
-                        <button
+                        {/* <button
                             className="ml-10 bg-slate-100 p-2 rounded-xl">
                             <RiSunLine size={25} color="black" />
-                        </button>
+                        </button> */}
                     </ul>
 
                     <div onClick={handleNav} className='md:hidden'>
@@ -127,10 +127,10 @@ const Navbar = () => {
                             <Link href='/#contact'>
                                 <li onClick={() => setNav(false)} className='py-4 text-sm'>Contacto</li>
                             </Link>
-                            <button
-                            className="py-4 w-[20%] bg-red-700 rounded-sm border-solid">
-                            <RiSunLine size={25} color="black" />
-                        </button>
+                            {/* <button
+                                className="py-4 w-[20%] bg-red-700 rounded-sm border-solid">
+                                <RiSunLine size={25} color="black" />
+                            </button> */}
                         </ul>
                         <div className='pt-40'>
                             <p className='uppercase tracking-widest text-[#5651e5]'>Contactame por</p>
