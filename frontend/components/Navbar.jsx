@@ -1,3 +1,4 @@
+"use client"
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState, useEffect } from 'react'
@@ -7,6 +8,7 @@ import { BsFillPersonLinesFill } from 'react-icons/bs'
 import { RiMoonFill, RiSunLine } from "react-icons/ri"
 import { useRouter } from 'next/router'
 import logo from '../public/assets/a.png'
+import { useTheme } from "next-themes";
 
 const Navbar = () => {
 
@@ -45,6 +47,10 @@ const Navbar = () => {
         window.addEventListener('scroll', handleShadow);
     }, [])
 
+    //DARK MODE
+    const { systemTheme, theme, setTheme } = useTheme();
+    const currentTheme = theme === 'system' ? systemTheme : theme;
+
     return (
         <div
             style={{ backgroundColor: `${navBg}` }}
@@ -71,14 +77,22 @@ const Navbar = () => {
                         <Link href="/#projects">
                             <li className='ml-10 text-sm uppercase hover:border-b'>Proyectos</li>
                         </Link>
+
+
                         <Link href="/#contact">
                             <li className='ml-10 text-sm uppercase hover:border-b'>Contacto</li>
                         </Link>
+
+
                         {/* <button onClick={() => setTheme("light")} */}
-                        {/* <button
-                            className="ml-10 bg-slate-100 p-2 rounded-xl">
+                        <button
+                            onClick={() => theme == "dark" ? setTheme('light') : setTheme("dark")}
+                            className='mx-3 bg-gray-800 dark:bg-gray-50 hover:bg-gray-600 dark:hover:bg-gray-300 transition-all duration-100 text-white dark:text-gray-800 px-8 py-2 text-2xl md:text-4xl rounded-lg bottom-32'>
                             <RiSunLine size={25} color="black" />
-                        </button> */}
+                        </button>
+
+
+
                     </ul>
 
                     <div onClick={handleNav} className='md:hidden'>
@@ -128,6 +142,11 @@ const Navbar = () => {
                             <Link href='/#contact'>
                                 <li onClick={() => setNav(false)} className='py-4 text-sm'>Contacto</li>
                             </Link>
+                            <button
+                                onClick={() => theme == "dark" ? setTheme('light') : setTheme("dark")}
+                                className='mx-3 bg-gray-800 dark:bg-gray-50 hover:bg-gray-600 dark:hover:bg-gray-300 transition-all duration-100 text-white dark:text-gray-800 px-8 py-2 text-2xl md:text-4xl rounded-lg bottom-32'>
+                                <RiSunLine size={25} color="black" />
+                            </button>
                             {/* <button
                                 className="py-4 w-[20%] bg-red-700 rounded-sm border-solid">
                                 <RiSunLine size={25} color="black" />
