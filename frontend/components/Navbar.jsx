@@ -85,11 +85,12 @@ const Navbar = () => {
 
 
                         {/* <button onClick={() => setTheme("light")} */}
-                        <button
+                        
+                        {/* <button
                             onClick={() => theme == "dark" ? setTheme('light') : setTheme("dark")}
                             className='mx-3 bg-gray-800 dark:bg-gray-50 hover:bg-gray-600 dark:hover:bg-gray-300 transition-all duration-100 text-white dark:text-gray-800 px-8 py-2 text-2xl md:text-4xl rounded-lg bottom-32'>
                             <RiSunLine size={25} color="black" />
-                        </button>
+                        </button> */}
 
 
 
@@ -142,11 +143,13 @@ const Navbar = () => {
                             <Link href='/#contact'>
                                 <li onClick={() => setNav(false)} className='py-4 text-sm'>Contacto</li>
                             </Link>
-                            <button
+
+                            {/* <button
                                 onClick={() => theme == "dark" ? setTheme('light') : setTheme("dark")}
                                 className='mx-3 bg-gray-800 dark:bg-gray-50 hover:bg-gray-600 dark:hover:bg-gray-300 transition-all duration-100 text-white dark:text-gray-800 px-8 py-2 text-2xl md:text-4xl rounded-lg bottom-32'>
                                 <RiSunLine size={25} color="black" />
-                            </button>
+                            </button> */}
+                            
                             {/* <button
                                 className="py-4 w-[20%] bg-red-700 rounded-sm border-solid">
                                 <RiSunLine size={25} color="black" />
